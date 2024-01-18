@@ -25,6 +25,12 @@ public class Controller {
         return customerList;
     }
 
+    @RequestMapping("/catman")
+    public String catman()
+    {
+        return "<img src=\"https://media.tenor.com/CC1VPnwBVMMAAAAi/gianbortion-cat.gif\" alt=\"dancing cat\">";
+    }
+
     // Retrieve a specific customer by ID
     @GetMapping("/{customerId}")
     public Optional<Customer> getCustomerById(@PathVariable int customerId) {
